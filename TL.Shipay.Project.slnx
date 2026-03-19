@@ -1,5 +1,19 @@
 <Solution>
-  <Project Path="D:/repos/TL.Shipay.Project/src/TL.Shipay.Project.Api/TL.Shipay.Project.Api/TL.Shipay.Project.Api.csproj" Id="3456d0a8-1ebf-4ade-ba1c-ca59c439a2e0" />
-  <Project Path="src/TL.Shipay.Project.Domain/TL.Shipay.Project.Domain/TL.Shipay.Project.Domain.csproj" Id="52e97f04-8a98-4cc7-891f-9e24c4d6f9f4" />
-  <Project Path="src/TL.Shipay.Project.Testes/TL.Shipay.Project.Testes/TL.Shipay.Project.Testes.csproj" Id="74696d81-293e-4d12-bc20-5534e411294d" />
+  <Folder Name="/1-Presentation/">
+    <Project Path="src/TL.Shipay.Project.Api/TL.Shipay.Project.Api.csproj" />
+  </Folder>
+  <Folder Name="/2-Application/">
+    <Project Path="src/TL.Shipay.Project.Application/TL.Shipay.Project.Application.csproj" Id="a36d8f95-e8f7-4e08-bf0c-b17278c1b512">
+      <BuildDependency Project="src/TL.Shipay.Project.Domain/TL.Shipay.Project.Domain.csproj" />
+    </Project>
+  </Folder>
+  <Folder Name="/3-Domain/">
+    <Project Path="src/TL.Shipay.Project.Domain/TL.Shipay.Project.Domain.csproj" />
+  </Folder>
+  <Folder Name="/4-Infrastructure/" />
+  <Folder Name="/5-Tests/">
+    <Project Path="src/TL.Shipay.Project.Testes/TL.Shipay.Project.Testes.csproj">
+      <BuildDependency Project="src/TL.Shipay.Project.Domain/TL.Shipay.Project.Domain.csproj" />
+    </Project>
+  </Folder>
 </Solution>
